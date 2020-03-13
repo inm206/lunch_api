@@ -1,13 +1,11 @@
-package com.rezdy.lunch_api;
+package com.rezdy.lunchapi;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
+// Domain class to contain ingredient data
 public class Ingredient {
 
   private String title;
@@ -54,7 +52,8 @@ public class Ingredient {
 
   @Override
   public String toString() {
-    return "Ingredient{" + "title='" + title + '\'' + ", best-before=" + bestBefore + '\'' + ", use-by=" + useBy + '}';
+    return "Ingredient{" + "title='" + title + '\'' + ", best-before=" + bestBefore + '\'' + ", " +
+        "use-by=" + useBy + '}';
   }
 
 }

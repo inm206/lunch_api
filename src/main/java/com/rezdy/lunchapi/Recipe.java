@@ -1,7 +1,8 @@
-package com.rezdy.lunch_api;
+package com.rezdy.lunchapi;
 
 import java.util.List;
 
+// Domain class to contain recipe data
 public class Recipe {
 
   private String title;
